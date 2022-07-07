@@ -37,11 +37,11 @@
                          <td>{{ $item->marca }}</td>
                          <td>{{ $item->modelo_del_motor }}</td>
                          <td>{{ $item->combustible }}</td>
-                        <td>
+                         <td>
                             <a href="{{ route ('unidades.edit', $item->id)}}" class="btn green darken-4"> <i class="large material-icons">edit</i></a>
                         </td>
                         <td>
-                            <form action="{{ route('unidades.destroy', $item->id)}}" method="POST">
+                            <form action="{{ route('unidades.destroy', $item->id)}} "method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn red darken-4"><i class="material-icons">delete</i></button>
