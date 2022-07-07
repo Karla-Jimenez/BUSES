@@ -42,9 +42,10 @@
     <li><a href="{{route('register.index')}}"><i class="material-icons">home</i>Inicio</a></li>
     <li><a href="{{route('unidades.create')}}"><i class="material-icons">directions_bus</i>Registrar Unidad</a></li>
     <li><a href="{{route('motoristas.create')}}"><i class="material-icons">person</i>Registrar Motorista</a></li>
-    <li><a href="{{route('rotacion.create')}}"><i class="material-icons">cached</i>Rotacion</a></li>
+    <li><a href="{{route('rotaciones.create')}}"><i class="material-icons">cached</i>Rotacion</a></li>
     <li><a href="{{route('motoristas.index')}}"><i class="material-icons">list</i>Lista de Empleados</a></li>
     <li><a href="{{route('unidades.index')}}"><i class="material-icons">list</i>Lista de Unidades</a></li>
+    <li><a href="{{route('rotaciones.index')}}"><i class="material-icons">list</i>Lista de Rotación</a></li>
   </ul>
      <div class="container">
         @yield('content')

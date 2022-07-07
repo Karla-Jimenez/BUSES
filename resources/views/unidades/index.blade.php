@@ -4,7 +4,7 @@
     <div class="container">
      <style type="text/css">
          #tabla {
-          width: 900px;
+          width: 800px;
           height: 900px;
           margin: auto;
           border :#D9D9D9  2px solid;
@@ -17,17 +17,16 @@
      </head>>
         <div class="container center">
             <h1>Listado de unidades</h1>
-            <div class="divider"></div>
         <div class="row" id="tabla">
         <table>
             <thead>
-                <th>Id</th>
-                <th>Matricula</th>
-                <th>Modelo</th>
-                <th>Marca</th>
-                <th>Modelo del motor</th>
-                <th>Combustible</th>
-                <th>Acciones</th>
+                <th>ID</th>
+                <th>MATRICULA</th>
+                <th>MODELO</th>
+                <th>MARCA</th>
+                <th>MODELO DEL MOTOR</th>
+                <th>COMBUSTIBLE</th>
+                <th>ACCIONES</th>
             </thead>
             <tbody>
                 @foreach ($unidad as $item)
@@ -46,7 +45,8 @@
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn red darken-4"><i class="material-icons">delete</i></button>
-                        </td>
+                            </form>
+                            </td>
                     </tr>
                 @endforeach
             </tbody>

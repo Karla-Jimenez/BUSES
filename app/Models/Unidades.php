@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Unidades extends Model
 {
     use HasFactory;
-    protected $fillable = ['matricula','modelo', 'marca', 'modelo_del_motor', 'combustible'];
+    protected $fillable = ['matricula',
+                           'modelo', 
+                           'marca', 
+                           'modelo_del_motor', 
+                           'combustible'];
 }

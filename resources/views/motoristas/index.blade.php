@@ -1,21 +1,19 @@
 @extends('layouts.layout')
 @section('content')
 <head>
-    <div class="container">
      <style type="text/css">
          #tabla {
-          width: 900px;
+          width: 1000px;
           height: 900px;
-          margin: auto;
-          border :#D9D9D9  2px solid;
+          margin: ;
+          border :#D9D9D9  10px solid;
           border-radius: 20px;
           background-color: #D9D9D9;
          }
       </style>
      </head>>
         <div class="container center">
-            <h1>Lista de motoristas</h1>
-            <div class="divider"></div>
+            <h1>Lista de empleados</h1>
         <div class="row" id="tabla">
         <table>
             <thead>
@@ -28,7 +26,7 @@
                 <th>NIT</th>
                 <th>DIRECCION</th>
                 <th>LICENCIA</th>
-                <th>Acciones</th>
+                <th>ACCIONES</th>
             </thead>
             <tbody>
                 @foreach ($motorista as $item)
@@ -50,7 +48,8 @@
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn red darken-4"><i class="material-icons">delete</i></button>
-                        </td>
+                            </form>
+                            </td>
                     </tr>
                 @endforeach
             </tbody>

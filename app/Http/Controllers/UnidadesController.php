@@ -96,7 +96,7 @@ class UnidadesController extends Controller
      * @param  \App\Models\Unidades  $unidad
      * @return \Illuminate\Http\Response
      */
-    public function destroy( $id)
+    public function destroy($id)
     {
         $unidad = Unidades::findOrFail($id);
         $unidad->delete();

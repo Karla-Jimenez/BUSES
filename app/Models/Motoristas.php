@@ -8,5 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Motoristas extends Model
 {
     use HasFactory;
-    protected $fillable = ['nombres','apellidos','email','telefono','dui','nit','direccion','licencia'];
+    protected $fillable = ['nombres',
+                           'apellidos',
+                           'email',
+                           'telefono',
+                           'dui',
+                           'nit',
+                           'direccion',
+                           'licencia'];
 }
