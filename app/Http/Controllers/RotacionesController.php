@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Rotacion;
+use App\Models\Rotaciones;
 use Illuminate\Http\Request;
 
-class RotacionController extends Controller
+class RotacionesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class RotacionController extends Controller
      */
     public function index()
     {
-        $rotaciones = Rotacion::all();
-        return view('rotacion.index', compact('rotaciones'));
+        $rotacion = Rotaciones::all();
+        return view('rotaciones.index', compact('rotacion'));
     }
 
     /**
@@ -25,7 +25,7 @@ class RotacionController extends Controller
      */
     public function create()
     {
-        return view('rotacion.create');
+        return view('rotaciones.create');
     }
 
     /**
@@ -37,16 +37,18 @@ class RotacionController extends Controller
     public function store(Request $request)
     {
         $validateData = $request->validate([
-            'fecha'=>'required|max:255',
+            'asignacion_de_ruta'=>'required|max:255',
+            'motorista'=>'required|max:255',
+            'fecha'=>'required|max:255'
         ]);
-        $show = Rotacion::create($validateData);
-        return redirect('/rotacion')->with('success','Departamento Guardado');
+        $show = Rotaciones::create($validateData);
+        return redirect('/rotaciones')->with('success', 'Unidad Guardada');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -57,41 +59,43 @@ class RotacionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $rotaciones = Rotacion::findOrFail($id);
-        return view('rotacion.edit',compact('rotaciones'));
+        $rotacion = Rotaciones::findOrFail($id);
+        return view('rotaciones.edit', compact('rotacion'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
         $validateData = $request->validate([
-            'fecha'=>'required|max:255',
+            'asignacion_de_ruta'=>'required|max:255',
+            'motorista'=>'required|max:255',
+            'fecha'=>'required|max:255'
         ]);
-        $show = Rotacion::create($validateData);
-        return redirect('/rotacion')->with('success','Departamento actualizado');
+        Rotaciones::whereId($id)->update($validateData);
+        return redirect('/rotaciones')->with('success', 'Datos Actualizados');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Rotaciones  $rotacion
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $rotaciones = Rotacion::findOrFail($id);
-        $rotaciones->delete();
-        return redirect('/rotacion')->with('success','Datos borrados');
+        $rotacion = Rotaciones::findOrFail($id);
+        $rotacion->delete();
+        return redirect('/rotaciones')->with('success', 'Datos borrados');
     }
 }

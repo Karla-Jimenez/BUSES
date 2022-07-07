@@ -10,6 +10,9 @@
         border-radius: 20px;
         background-color: white;
        }
+          form {
+           font-family: "Lato", sans-serif;
+            }
     </style>
 </head>
     <div class="container center">

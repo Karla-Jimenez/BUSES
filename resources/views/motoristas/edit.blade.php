@@ -24,7 +24,7 @@
           <div class="col s12">
             Nombres:
             <div class="input-field inline">
-              <input id="nombres_inline" type="text" class="validate" value="{{$motorista->nombres}}">
+              <input name="nombres" id="nombres_inline" type="text" class="validate" value="{{$motorista->nombres}}">
               <label for="nombres_inline">Nombres del motorista</label>
             </div>
           </div>
@@ -33,7 +33,7 @@
           <div class="col s12">
             Apellidos:
             <div class="input-field inline">
-              <input id="apellidos_inline" type="text" class="validate" value="{{$motorista->apellidos}}">
+              <input name="apellidos" id="apellidos_inline" type="text" class="validate" value="{{$motorista->apellidos}}">
               <label for="apellidos_inline">Apellidos del motorista</label>
             </div>
           </div>
@@ -42,7 +42,7 @@
           <div class="col s12">
             Correo electronico:
             <div class="input-field inline">
-              <input id="email_inline" type="email" class="validate" value="{{$motorista->email}}">
+              <input name="email" id="email_inline" type="email" class="validate" value="{{$motorista->email}}">
               <label for="email_inline">Correo del motorista</label>
             </div>
           </div>
@@ -51,7 +51,7 @@
           <div class="col s12">
             Telefono:
             <div class="input-field inline">
-              <input id="telefono_inline" type="text" class="validate" value="{{$motorista->telefono}}">
+              <input name="telefono" id="telefono_inline" type="text" class="validate" value="{{$motorista->telefono}}">
               <label for="telefono_inline">Telefono del motorista</label>
             </div>
           </div>
@@ -60,7 +60,7 @@
           <div class="col s12">
             D.U.I:
             <div class="input-field inline">
-              <input id="dui_inline" type="text" class="validate" value="{{$motorista->dui}}">
+              <input name="dui" id="dui_inline" type="text" class="validate" value="{{$motorista->dui}}">
               <label for="dui_inline">Dui del motorista</label>
             </div>
           </div>
@@ -69,7 +69,7 @@
           <div class="col s12">
             NIT:
             <div class="input-field inline">
-              <input id="nit_inline" type="text" class="validate" value="{{$motorista->nit}}">
+              <input name="nit" id="nit_inline" type="text" class="validate" value="{{$motorista->nit}}">
               <label for="nit_inline">Dui del motorista</label>
             </div>
           </div>
@@ -78,7 +78,7 @@
           <div class="col s12">
             Direccion:
             <div class="input-field inline">
-              <input id="direccion_inline" type="text" class="validate" value="{{$motorista->direccion}}">
+              <input name="direccion" id="direccion_inline" type="text" class="validate" value="{{$motorista->direccion}}">
               <label for="direccion_inline">Direccion del motorista</label>
             </div>
           </div>
@@ -87,7 +87,7 @@
           <div class="col s12">
             Licencia:
             <div class="input-field inline">
-              <input id="licencia_inline" type="text" class="validate" value="{{$motorista->licencia}}">
+              <input name="licencia" id="licencia_inline" type="text" class="validate" value="{{$motorista->licencia}}">
               <label for="licencia_inline">licencia del motorista</label>
             </div>
           </div>

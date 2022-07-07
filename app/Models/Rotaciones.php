@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Rotacion extends Model
+class Rotaciones extends Model
 {
     use HasFactory;
-    protected $fillable = ['fecha','idunidadtransporte','idmotorista',];
+    protected $fillable = ['asignacion_de_ruta','motorista','fecha',];
 }

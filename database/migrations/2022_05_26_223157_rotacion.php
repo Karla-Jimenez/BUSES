@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('rotacion', function (Blueprint $table) {
             $table->id();
             $table->string('asignacion_de_ruta');
-            $table->integer('id_motorista');
+            $table->string('motorista');
             $table->string('fecha');
             $table->timestamps();
         });
