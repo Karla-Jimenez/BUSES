@@ -13,15 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('base', function (Blueprint $table) {
-            $table->id();
-            $table->string('nombre');
-            $table->string('direccion');
-            $table->string('telefono');
-            $table->string('email');
-            $table->string('password');
-            $table->timestamps();
-        });
+            Schema::create('rotaciones', function (Blueprint $table) {
+                $table->id();
+                $table->string('asignacion_de_ruta');
+                $table->string('motorista');
+                $table->string('fecha');
+                $table->timestamps();
+            });
+      
     }
 
     /**
@@ -31,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('base');
+        Schema::dropIfExists('rotaciones');
     }
 };

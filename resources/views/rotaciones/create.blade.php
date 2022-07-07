@@ -14,8 +14,7 @@
 </head>
    <div class="container center">
     <h1>Rotacion</h1>
-    <div class="divider"></div>
-    <form method="POST" class="col s12" action="{{ route('motoristas.store')}}">
+    <form method="POST" class="col s12" action="{{ route('rotaciones.store')}}">
       <div class="row">
           @csrf
         <div class="container center">
@@ -23,7 +22,7 @@
           <div class="col s12">
             Asignacion de ruta:
             <div class="input-field inline">
-              <input id="nombres_inline" type="text" class="validate">
+              <input name="asignacion_de_ruta" id="nombres_inline" type="text" class="validate">
               <label for="nombres_inline">Nombres del motorista</label>
             </div>
           </div>
@@ -32,7 +31,7 @@
           <div class="col s12">
             Motorista asignado:
             <div class="input-field inline">
-              <input id="apellidos_inline" type="text" class="validate">
+              <input name="motorista" id="apellidos_inline" type="text" class="validate">
               <label for="apellidos_inline">Apellidos del motorista</label>
             </div>
           </div>
@@ -41,8 +40,8 @@
           <div class="col s12">
             Fecha:
             <div class="input-field inline">
-              <input id="telefono_inline" type="text" class="validate">
-              <label for="telefono_inline">Telefono del motorista</label>
+              <input name="fecha" id="fecha_inline" type="text" class="validate">
+              <label for="telefono_inline">Fecha</label>
             </div>
           </div>
         </div>
