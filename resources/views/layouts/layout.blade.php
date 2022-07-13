@@ -28,7 +28,7 @@
 #slide-out a {
   padding:13px 13px 13px 10px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: white;
   display: inline-block;
 }

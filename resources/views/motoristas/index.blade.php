@@ -3,28 +3,21 @@
 <head>
      <style type="text/css">
          #tabla {
-<<<<<<< HEAD
           width: 1000px;
           height: 900px;
           margin: ;
           border :#D9D9D9  10px solid;
-=======
           width: 960px;
           height: 960px;
           margin: auto;
           border :#D9D9D9  2px solid;
->>>>>>> 6abbafbc1c41bb2ca544873673d94bf398384d08
           border-radius: 20px;
           background-color: #D9D9D9;
          }
       </style>
      </head>>
         <div class="container center">
-<<<<<<< HEAD
-            <h1>Lista de empleados</h1>
-=======
-             <h1>LISTA EMPLEADOS</h1>
->>>>>>> 6abbafbc1c41bb2ca544873673d94bf398384d08
+            <h1>Lista de Empleados</h1>
         <div class="row" id="tabla">
         <table>
             <thead>
@@ -37,10 +30,7 @@
                 <th>NIT</th>
                 <th>DIRECCION</th>
                 <th>LICENCIA</th>
-<<<<<<< HEAD
                 <th>ACCIONES</th>
-=======
->>>>>>> 6abbafbc1c41bb2ca544873673d94bf398384d08
             </thead>
             <tbody>
                 @foreach ($motorista as $item)

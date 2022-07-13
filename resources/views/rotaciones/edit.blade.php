@@ -14,11 +14,8 @@
 </head>
         <div class="container center">
             <h1>Editar rotaciones</h1>
-<<<<<<< HEAD
             <form method="post" class="col s12" action="{{route('rotaciones.update', $rotacion->id) }}">
-=======
             <form method="POST" class="col s12" action="{{route('rotaciones.update', $rotacion->id) }}">
->>>>>>> 6abbafbc1c41bb2ca544873673d94bf398384d08
                 <div class="row">
                     @csrf 
                     @method('PATCH')
@@ -49,21 +46,18 @@
                           </div>
                         </div>
                     </div>
-<<<<<<< HEAD
             <div class="row">
                 <div class="input-field col s12">
                     <a href="{{ route('rotaciones.index')}}" class="btn yellow darken-4">Cancelar</a>
                     <input type="submit" value="Actualizar" class="btn green darken-4">
                 </div>
             </div>
-=======
                     <div class="row">
                       <input type="submit" value="Confirmar" class="btn red darken-1">
                 </div>
                 <div class="row">
                     <a href="{{ route('rotaciones.index')}}" class="btn red darken-1">Cancelar</a>
                 </div>
->>>>>>> 6abbafbc1c41bb2ca544873673d94bf398384d08
         </form>
     </div>
 @endsection

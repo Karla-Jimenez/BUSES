@@ -23,7 +23,7 @@
             Asignacion de ruta:
             <div class="input-field inline">
               <input name="asignacion_de_ruta" id="nombres_inline" type="text" class="validate">
-              <label for="nombres_inline">Nombres del motorista</label>
+              <label for="nombres_inline">Ruta asignada</label>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@
             Motorista asignado:
             <div class="input-field inline">
               <input name="motorista" id="apellidos_inline" type="text" class="validate">
-              <label for="apellidos_inline">Apellidos del motorista</label>
+              <label for="apellidos_inline">Nombre del motorista</label>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
           </div>
         </div>
           <div class="row">
-            <input type="submit" value="Confirmar" class="btn red darken-1">
+            <input type="submit" value="Confirmar" class="btn green darken-1">
         </div>
         <div class="row">
             <input type="reset" value="Cancelar" class="btn red darken-1">

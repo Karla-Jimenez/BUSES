@@ -16,7 +16,7 @@
     </div>
      </head>>
         <div class="container center">
-            <h1>Listado de unidades</h1>
+            <h1>Listado de Unidades</h1>
         <div class="row" id="tabla">
         <table>
             <thead>

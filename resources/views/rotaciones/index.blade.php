@@ -4,17 +4,14 @@
     <div class="container">
      <style type="text/css">
          #tabla {
-<<<<<<< HEAD
           width: 700px;
           height: 900px;
           margin: auto;
           border :#D9D9D9  3px solid;
-=======
-          width: 900px;
+          width: 750px;
           height: 900px;
           margin: auto;
           border :#D9D9D9  2px solid;
->>>>>>> 6abbafbc1c41bb2ca544873673d94bf398384d08
           border-radius: 20px;
           background-color: #D9D9D9;
          }
@@ -23,7 +20,6 @@
     </div>
      </head>>
         <div class="container center">
-<<<<<<< HEAD
             <h1>Listado de Rotación</h1>
         <div class="row" id="tabla">
         <table>
@@ -33,17 +29,6 @@
                 <th>MOTORISTA</th>
                 <th>FECHA</th>
                 <th>ACCIONES</th>
-=======
-            <h1>Listado de rotaciones</h1>
-        <div class="row" id="tabla">
-        <table>
-            <thead>
-                <th>Id</th>
-                <th>Asignación de ruta</th>
-                <th>Motorista</th>
-                <th>Fecha</th>
-                <th>Acciones</th>
->>>>>>> 6abbafbc1c41bb2ca544873673d94bf398384d08
             </thead>
             <tbody>
                 @foreach ($rotacion as $item)
@@ -67,8 +52,4 @@
             </tbody>
         </table>
     </div>
-<<<<<<< HEAD
 @endsection
-=======
-@endsection
->>>>>>> 6abbafbc1c41bb2ca544873673d94bf398384d08

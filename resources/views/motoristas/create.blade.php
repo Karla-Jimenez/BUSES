@@ -61,7 +61,7 @@
                       DUI:
                       <div class="input-field inline">
                           <input name="dui" id="dui_inline" type="text" class="validate">
-                          <label for="dui_inline">Dui</label>
+                          <label for="dui_inline">Número de Dui</label>
                       </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                    Nit:
                     <div class="input-field inline">
                         <input name="nit" id="nit_inline" type="text" class="validate">
-                        <label for="nit_inline">Nit</label>
+                        <label for="nit_inline">Número de Nit</label>
                     </div>
                   </div>
               </div>
@@ -94,7 +94,7 @@
           </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input type="submit" value="Confirmar" class="btn red darken-1">
+                        <input type="submit" value="Confirmar" class="btn green darken-1">
                     </div>
                     <div class="input-field col s12">
                         <input type="reset" value="Cancelar" class="btn red darken-1">
