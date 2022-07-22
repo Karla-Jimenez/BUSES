@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     
@@ -25,7 +27,7 @@
 <body>  
     <script type="text/javascript">
         function initMap() {
-          const myLatLng = { lat: [], lng: [] };
+          const myLatLng = { lat: 13.7333,, lng: -89.7167  };
           const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 5,
             center: myLatLng,
