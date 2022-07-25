@@ -13,6 +13,6 @@ class GoogleController extends Controller
      */
     public function index()
     {
-        return view('googleAutocomplete');
+        return view('mapa');
     }
 }

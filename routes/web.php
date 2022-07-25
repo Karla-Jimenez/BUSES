@@ -25,5 +25,5 @@ Route::get('/', function () {
 Route::resource('motoristas', MotoristasController::class);
 Route::resource('rotaciones', RotacionesController::class);
 Route::resource('unidades',UnidadesController::class);
-Route::get('google-autocomplete', [GoogleController::class, 'index']);
+Route::get('mapa', [GoogleController::class, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
